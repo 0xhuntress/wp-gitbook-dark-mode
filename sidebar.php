@@ -1,8 +1,6 @@
 <div class="book-summary">
 	<div id="book-search-input" role="search">
-		<form method="get" action="<?php echo esc_url( home_url() ); ?>">
-			<input type="text" name="s" value="<?php echo esc_attr( get_search_query() ); ?>" placeholder="Type and press enter to search">
-		</form>
+		<?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
 	</div>
 	<nav role="navigation">
 		<?php do_action( 'before_sidebar' ); ?>
